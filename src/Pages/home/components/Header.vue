@@ -5,8 +5,10 @@
     </div>
     <div class="header-search">
       <span class="iconfont search-icon">&#xe635;</span>
-      输入景点/城市/游玩主题</div>
-    <div class="header-right">城市
+      输入景点/城市/游玩主题
+    </div>
+    <div class="header-right">
+      城市
       <span class="iconfont arrow-icon">&#xe602;</span>
     </div>
   </div>
@@ -19,33 +21,33 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-  @import '~styles/variables.styl'
-  .header
-    display: flex
-    line-height: .86rem
-    background-color: $bgColor
-    color: #fff
-    .header-left
-      width: .64rem
-      float: left
-      .back-icon
-        text-align: center
-        font-size: .4rem
-    .header-search
-      height: .64rem
-      line-height: .64rem
-      margin-top: .12rem
-      margin-left: .2rem
-      padding-left .2rem
-      background-color: #fff
-      border-radius: .1rem
-      color: #ccc
-      flex: 1
-    .header-right
-      width: 1.26rem
-      float: right
+@import '~styles/variables.styl'
+.header
+  display: flex
+  line-height: .86rem
+  background-color: $bgColor
+  color: #fff
+  .header-left
+    width: .64rem
+    float: left
+    .back-icon
       text-align: center
-      .arrow-icon
-        margin-left: -.04rem
-        font-size .24rem
+      font-size: .4rem
+  .header-search
+    height: .64rem
+    line-height: .64rem
+    margin-top: .12rem
+    margin-left: .2rem
+    padding-left .2rem
+    background-color: #fff
+    border-radius: .1rem
+    color: #ccc
+    flex: 1
+  .header-right
+    width: 1.26rem
+    float: right
+    text-align: center
+    .arrow-icon
+      margin-left: -.04rem
+      font-size .24rem
 </style>
