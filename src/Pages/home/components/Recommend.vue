@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key=item.id>
+      <li class="item border-bottom" v-for="item of list" :key=item.id>
         <img :src="item.imgUrl" class="item-img">
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -17,27 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        title: '重庆当地游 4天自由行',
-        desc: '抖音玩法🔥3晚重庆网红民宿+魔幻洪崖洞+8D山城夜景+麻辣地道火锅',
-        imgUrl: '//imgs.qunarzz.com/vs_ceph_vs_tts/5af58c1f-794b-48e0-bcdc-31e85acdb0ce.jpg_r_480x320x95_3fa90f4e.jpg'
-      },
-      {
-        id: '0002',
-        title: '重庆当地游 4天自由行',
-        desc: '抖音玩法🔥3晚重庆网红民宿+魔幻洪崖洞+8D山城夜景+麻辣地道火锅',
-        imgUrl: '//imgs.qunarzz.com/vs_ceph_vs_tts/5af58c1f-794b-48e0-bcdc-31e85acdb0ce.jpg_r_480x320x95_3fa90f4e.jpg'
-      },
-      {
-        id: '0003',
-        title: '重庆当地游 4天自由行',
-        desc: '抖音玩法🔥3晚重庆网红民宿+魔幻洪崖洞+8D山城夜景+麻辣地道火锅',
-        imgUrl: '//imgs.qunarzz.com/vs_ceph_vs_tts/5af58c1f-794b-48e0-bcdc-31e85acdb0ce.jpg_r_480x320x95_3fa90f4e.jpg'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
